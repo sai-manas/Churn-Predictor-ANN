@@ -4,9 +4,12 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 
 #Load the model
-model = tf.keras.models.load_model("models/model.keras")
+model = tf.keras.models.load_model("models/model.keras", compile=False)
 
 #Load the Encoders and Scaler
 with open("models/label_encoder_gender.pkl","rb") as file:
