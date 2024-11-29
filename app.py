@@ -9,7 +9,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 
 #Load the model
-model = tf.keras.models.load_model("models/model.keras", compile=False)
+model = tf.keras.models.load_model("models/model.keras", compile=True)
 
 #Load the Encoders and Scaler
 with open("models/label_encoder_gender.pkl","rb") as file:
