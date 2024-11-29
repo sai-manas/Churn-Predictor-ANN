@@ -1,3 +1,3 @@
 # Churn-Predictor-ANN
+https://churn-predictor-ann-nu6tgtwpyh7njgtjzbjt6z.streamlit.app/
 
-https://churn-predictor-ann-rzwsjnzfuhpwpb7quc3bkh.streamlit.app/
