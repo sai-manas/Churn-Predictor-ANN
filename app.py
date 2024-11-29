@@ -73,7 +73,7 @@ if st.button("Submit"):
 
     if prediction_proba > 0.5:
         st.markdown(
-            """
+            f"""
             <style>
             @keyframes discoGlow {
                 0% { border-color: red; box-shadow: 0 0 10px red; }
@@ -98,7 +98,7 @@ if st.button("Submit"):
         )
     else:
         st.markdown(
-            """
+            f"""
             <style>
             @keyframes discoGlow {
                 0% { border-color: lime; box-shadow: 0 0 10px lime; }
