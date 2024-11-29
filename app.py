@@ -25,6 +25,7 @@ with open("models/scalar.pkl","rb") as file:
 st.title("Customer Churn Prediction")
 
 # User input
+name = st.text_input("Enter your name:", placeholder="Your name here")
 geography = st.selectbox("Geography",onehot_encoder_geo.categories_[0])
 gender = st.selectbox("Gender",label_encoder_gender.classes_)
 has_card = st.selectbox("Has Credit Card",[0,1])
@@ -66,7 +67,7 @@ if st.button("Submit"):
     prediction_proba = prediction[0][0]
 
     st.markdown(
-        f"<h4 style='font-weight:bold;'>Churn Probability: {prediction_proba:.2f}</h4>",
+        f"<h4 style='font-weight:bold;'>Churn Probability for {name}: {prediction_proba:.2f}</h4>",
         unsafe_allow_html=True
     )
 
@@ -91,7 +92,7 @@ if st.button("Submit"):
                 animation: discoGlow 2s infinite;
             }
             </style>
-            <div class="disco-text">The customer is likely to churn.</div>
+            <div class="disco-text">The customer {name} is likely to churn.</div>
             """,
             unsafe_allow_html=True
         )
@@ -116,7 +117,7 @@ if st.button("Submit"):
                 animation: discoGlow 2s infinite;
             }
             </style>
-            <div class="disco-text">The customer is not likely to churn.</div>
+            <div class="disco-text">The customer {name} is not likely to churn.</div>
             """,
             unsafe_allow_html=True
         )
