@@ -75,14 +75,14 @@ if st.button("Submit"):
         st.markdown(
             f"""
             <style>
-            @keyframes discoGlow {
-                0% { border-color: red; box-shadow: 0 0 10px red; }
-                25% { border-color: yellow; box-shadow: 0 0 10px yellow; }
-                50% { border-color: green; box-shadow: 0 0 10px green; }
-                75% { border-color: blue; box-shadow: 0 0 10px blue; }
-                100% { border-color: red; box-shadow: 0 0 10px red; }
-            }
-            .disco-text {
+            @keyframes discoGlow {{
+                0% {{ border-color: red; box-shadow: 0 0 10px red; }}
+                25% {{ border-color: yellow; box-shadow: 0 0 10px yellow; }}
+                50% {{ border-color: green; box-shadow: 0 0 10px green; }}
+                75% {{ border-color: blue; box-shadow: 0 0 10px blue; }}
+                100% {{ border-color: red; box-shadow: 0 0 10px red; }}
+            }}
+            .disco-text {{
                 font-size: 2em;
                 font-weight: bold;
                 text-align: center;
@@ -90,7 +90,7 @@ if st.button("Submit"):
                 border-radius: 10px;
                 padding: 10px;
                 animation: discoGlow 2s infinite;
-            }
+            }}
             </style>
             <div class="disco-text">The customer {name} is likely to churn.</div>
             """,
@@ -100,14 +100,14 @@ if st.button("Submit"):
         st.markdown(
             f"""
             <style>
-            @keyframes discoGlow {
-                0% { border-color: lime; box-shadow: 0 0 10px lime; }
-                25% { border-color: cyan; box-shadow: 0 0 10px cyan; }
-                50% { border-color: magenta; box-shadow: 0 0 10px magenta; }
-                75% { border-color: orange; box-shadow: 0 0 10px orange; }
-                100% { border-color: lime; box-shadow: 0 0 10px lime; }
-            }
-            .disco-text {
+            @keyframes discoGlow {{
+                0% {{ border-color: lime; box-shadow: 0 0 10px lime; }}
+                25% {{ border-color: cyan; box-shadow: 0 0 10px cyan; }}
+                50% {{ border-color: magenta; box-shadow: 0 0 10px magenta; }}
+                75% {{ border-color: orange; box-shadow: 0 0 10px orange; }}
+                100% {{ border-color: lime; box-shadow: 0 0 10px lime; }}
+            }}
+            .disco-text {{
                 font-size: 2em;
                 font-weight: bold;
                 text-align: center;
@@ -115,7 +115,7 @@ if st.button("Submit"):
                 border-radius: 10px;
                 padding: 10px;
                 animation: discoGlow 2s infinite;
-            }
+            }}
             </style>
             <div class="disco-text">The customer {name} is not likely to churn.</div>
             """,
