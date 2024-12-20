@@ -1,4 +1,5 @@
 # Churn-Predictor-ANN
+Visit the web application: [Churn Predictor](https://churn-predictor-ann-nu6tgtwpyh7njgtjzbjt6z.streamlit.app/)
 
 ## Description
 Churn Predictor - Web Application: Predict customer churn using an ANN model deployed in a user-friendly Streamlit app. The application leverages standard preprocessing techniques including label encoding, one-hot encoding, and scaling. Users can input customer details to predict churn probability with a dynamic and interactive interface. The model achieves an accuracy of 85%.
