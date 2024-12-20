@@ -56,4 +56,3 @@ To deploy the application on Streamlit from GitHub:
 3. Create a new app and connect it to your GitHub repository.
 4. Select the branch and the main file (`app.py`) to deploy.
 5. Click "Deploy" to launch your application.
-```
